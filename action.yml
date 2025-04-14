@@ -1,0 +1,21 @@
+name: 'generate-allure-html-report'
+description: 'Generate allure html report'
+
+inputs:
+
+  allure-results:
+    description: 'Allure result directory'
+    required: true
+    default: 'allure-results'
+
+  allure-report:
+    description: 'Allure report directory'
+    required: true
+    default: 'allure-report'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.allure-results }}
+    - ${{ inputs.allure-report }}
