@@ -19,3 +19,8 @@ runs:
   args:
     - ${{ inputs.allure-results }}
     - ${{ inputs.allure-report }}
+
+branding:
+  icon: "chevron-right"
+  color: "green"
+    
