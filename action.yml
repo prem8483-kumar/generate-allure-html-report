@@ -1,5 +1,6 @@
 name: 'generate-allure-html-report'
 description: 'Generate allure html report'
+author: 'prem8483-kumar'
 
 inputs:
 
